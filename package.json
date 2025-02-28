@@ -2,13 +2,12 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start",
-    "deploy": "npm run build && gh-pages -d out",
-    "lint": "next lint"
-  },
+"scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "deploy": "npm run build && gh-pages -d out"
+},
   "dependencies": {
     "@lottiefiles/react-lottie-player": "^3.6.0",
     "framer-motion": "^12.4.7",
