@@ -4,6 +4,7 @@ import "./globals.css";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import PageWrapper from "@/components/PageWrapper";
+import ScrollUpButton from "@/components/ScrollUpButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +33,7 @@ export default function RootLayout({
       >
         <PageWrapper>
           {children}
+          <ScrollUpButton />
         </PageWrapper>
       </body>
     </html>
