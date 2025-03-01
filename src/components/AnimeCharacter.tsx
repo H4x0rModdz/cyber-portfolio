@@ -1,19 +1,29 @@
 import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
+import { useLanguage } from '@/contexts/LanguageContext';
 
-const messages = [
+  const messages = [
    "Heey! Nice to see u here! 😊",
    "Hope u like my portfolio! <3",
    "Shall we work together? 🌟",
    "I loved ur interest! 🎉",
- ];
+  ];
+
+  const translatedMessages = [
+    "Oláá! Prazer em te ver aqui! 😊",
+    "Espero que goste do meu portfólio! <3",
+    "Vamos trabalhar juntos? 🌟",
+    "Amei o seu interesse! 🎉",
+  ]
 
  const Player = dynamic(() => import('@lottiefiles/react-lottie-player').then(mod => mod.Player), { ssr: true });
 
 const AnimeCharacter = () => {
   const [isClient, setIsClient] = useState(false);
   const [currentMessageIndex, setCurrentMessageIndex] = useState(0);
-
+  const { isEnglish } = useLanguage();
+  const currentMessage = isEnglish ? messages[currentMessageIndex] : translatedMessages[currentMessageIndex];
+  
   useEffect(() => {
     setIsClient(true);
   }, []);
@@ -48,7 +58,7 @@ const AnimeCharacter = () => {
       >
         <div className="relative">
           <p className="text-gray-800 text-sm select-none">
-            {messages[currentMessageIndex]}
+            {currentMessage}
           </p>
           <div className="absolute -bottom-4 left-0 w-4 h-4 bg-white transform rotate-45"></div>
         </div>
