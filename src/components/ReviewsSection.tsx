@@ -22,12 +22,12 @@ const sliderSettings = {
 
 const ReviewsSection: React.FC = () => {
   const { isEnglish } = useLanguage();
-  const t = translations[isEnglish ? 'en' : 'pt'];
-  const reviewsSection: IReview[] = t.reviewsSection;
+  const actualLanguage = translations[isEnglish ? 'en' : 'pt'];
+  const reviewsSection: IReview[] = actualLanguage.reviewsSection;
 
   return (
     <div className="text-white py-12 px-4 mb-10">
-      <h2 className="text-center text-3xl font-bold mb-8">{t.reviews.title}</h2>
+      <h2 className="text-center text-3xl font-bold mb-8">{actualLanguage.reviews.title}</h2>
       <div className="max-w-6xl mx-auto">
         <div className="w-full max-w-xs sm:max-w-md md:max-w-lg xl:max-w-4xl mx-auto">
           <Slider {...sliderSettings}>

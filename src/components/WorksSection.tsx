@@ -8,8 +8,8 @@ import { defaultImage, ProjectCard } from './ProjectCard';
 
 export default function WorksSection() {
   const { isEnglish } = useLanguage();
-  const t = translations[isEnglish ? 'en' : 'pt'];
-  const projects: IProject[] = t.projects;
+  const actualLanguage = translations[isEnglish ? 'en' : 'pt'];
+  const projects: IProject[] = actualLanguage.projects;
   const [selectedProject, setSelectedProject] = useState<IProject | null>(null);
 
   const openModal = (project: IProject) => setSelectedProject(project);
@@ -17,7 +17,7 @@ export default function WorksSection() {
 
   return (
     <section className="py-8 px-6 mb-40 mt-14" id="works">
-      <h2 className="text-5xl font-semibold mb-20 text-center">{t.works.title}</h2>
+      <h2 className="text-5xl font-semibold mb-20 text-center">{actualLanguage.works.title}</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {projects.map((project, index) => (
           <ProjectCard

@@ -18,7 +18,7 @@ const experiences = [
 
 export default function ExperienceSection() {
   const { isEnglish } = useLanguage(); 
-  const t = translations[isEnglish ? 'en' : 'pt'];
+  const actualLanguage = translations[isEnglish ? 'en' : 'pt'];
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -46,7 +46,7 @@ export default function ExperienceSection() {
 
   return (
     <div className="flex flex-col items-center justify-center w-full" id="workExperience">
-      <h2 className="text-5xl font-semibold mb-28 text-center">{t.experience.title}</h2>
+      <h2 className="text-5xl font-semibold mb-28 text-center">{actualLanguage.experience.title}</h2>
       <div className="flex items-start justify-between w-full max-w-7xl px-8">
         <div className="flex items-start ml-8 max-[450px]:items-stretch">
           <hr
@@ -73,7 +73,7 @@ export default function ExperienceSection() {
                 className="bg-fuchsia-900 hover:bg-fuchsia-950 text-white font-bold py-2 px-4 rounded-xl"
                 onClick={handleDownloadResume}
               >
-                {t.experience.downloadFullCV}
+                {actualLanguage.experience.downloadFullCV}
               </button>
             </div>
           </AnimatedSection>
@@ -89,14 +89,14 @@ export default function ExperienceSection() {
               />
             )}
           </div>
-          <p className="mt-4">{t.experience.workWithMe}</p>
+          <p className="mt-4">{actualLanguage.experience.workWithMe}</p>
           <a
             href="mailto:lucasbg.lobo@gmail.com?subject=Quero%20trabalhar%20com%20você&body=Olá%20Lucas,%0A%0AEstou%20entrando%20em%20contato%20porque%20gostaria%20de%20trabalhar%20com%20você.%20Adoraria%20discutir%20mais%20sobre%20possíveis%20colaborações.%0A%0AAtenciosamente,%0A[Seu%20Nome]"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-4 bg-fuchsia-900 hover:bg-fuchsia-950 text-white font-bold py-2 px-4 rounded-xl"
           >
-            {t.experience.talk}
+            {actualLanguage.experience.talk}
           </a>
         </div>
       </div>

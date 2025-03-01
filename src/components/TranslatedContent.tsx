@@ -13,13 +13,13 @@ import ContactSection from '@/components/ContactSection';
 
 export default function TranslatedContent() {
   const { isEnglish } = useLanguage();
-  const t = translations[isEnglish ? 'en' : 'pt'];
+  const actualLanguage = translations[isEnglish ? 'en' : 'pt'];
 
   return (
     <div className="bg-black text-white min-h-screen select-none">
       <Head>
-        <title>{t.title}</title>
-        <meta name="description" content={t.description} />
+        <title>{actualLanguage.title}</title>
+        <meta name="description" content={actualLanguage.description} />
       </Head>
       <NavBar />
       <LanguageSwitch />

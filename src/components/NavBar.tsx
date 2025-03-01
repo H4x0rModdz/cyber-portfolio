@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react';
 
 export default function NavBar() {
   const { isEnglish } = useLanguage();
-  const t = translations[isEnglish ? 'en' : 'pt'];
+  const actualLanguage = translations[isEnglish ? 'en' : 'pt'];
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollPos, setLastScrollPos] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -63,22 +63,22 @@ export default function NavBar() {
             </button>
             <div className="hidden md:flex space-x-6 text-white">
               <Link href="#about" className="hover:text-red-500 transition">
-                {t.nav.about}
+                {actualLanguage.nav.about}
               </Link>
               <Link href="#workExperience" className="hover:text-red-500 transition">
-              {t.nav.workExperience}
+              {actualLanguage.nav.workExperience}
               </Link>
               <Link href="#works" className="hover:text-red-500 transition">
-                {t.nav.works}
+                {actualLanguage.nav.works}
               </Link>
               <Link href="https://wa.me/5521978813492?text=Olá! Estou enviando esta mensagem para me contactar com você" target='_blank' className="hover:text-red-500 transition">
-                {t.nav.contact}
+                {actualLanguage.nav.contact}
               </Link>
               <button
                 className="hover:text-red-500 transition"
                 onClick={handleDownloadResume}
               >
-                {t.nav.downloadCV}
+                {actualLanguage.nav.downloadCV}
               </button>
             </div>
             <AnimatePresence>
@@ -91,19 +91,19 @@ export default function NavBar() {
                   className="absolute top-full right-8 md:right-auto w-auto flex flex-col items-end space-y-4 text-white md:hidden"
                 >
                   <Link href="#about" className="hover:text-red-500 transition">
-                    {t.nav.about}
+                    {actualLanguage.nav.about}
                   </Link>
                   <Link href="#works" className="hover:text-red-500 transition">
-                    {t.nav.works}
+                    {actualLanguage.nav.works}
                   </Link>
                   <Link href="#contact" className="hover:text-red-500 transition">
-                    {t.nav.contact}
+                    {actualLanguage.nav.contact}
                   </Link>
                   <button
                     className="hover:text-red-500 transition"
                     onClick={handleDownloadResume}
                   >
-                    {t.nav.downloadCV}
+                    {actualLanguage.nav.downloadCV}
                   </button>
                 </motion.div>
               )}

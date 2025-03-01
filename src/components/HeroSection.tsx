@@ -8,7 +8,7 @@ import AnimatedText from './AnimatedText';
 
 export default function HeroSection() {
   const { isEnglish } = useLanguage();
-  const t = translations[isEnglish ? 'en' : 'pt'];
+  const actualLanguage = translations[isEnglish ? 'en' : 'pt'];
 
   return (
     <section className="h-screen bg-black flex flex-col items-center justify-center text-white px-4">
@@ -26,7 +26,7 @@ export default function HeroSection() {
         transition={{ duration: 0.8, delay: 0.2 }}
         className="text-lg md:text-xl text-gray-400 mt-6 max-w-4xl"
       >
-        {t.hero.subtitle}
+        {actualLanguage.hero.subtitle}
       </motion.p>
     </section>
   );
