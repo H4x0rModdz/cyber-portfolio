@@ -31,7 +31,7 @@
       "videoPath": "",
       "description": "The front-end interface for the Restaurant platform, providing an intuitive UI for managing restaurant operations.",
       "image": "",
-      "stacks": [".NET (C#)", "Blazor", "Razor Pages", "SignalR"],
+      "stacks": [".NET (C#)", "Blazor", "MudBlazor", "JavaScript", "Azure DevOps", "Docker", "Razor Pages", "SignalR"],
       "createdAt": "15/01/2023",
       "repositoryPath": "https://github.com/H4x0rModdz/Restaurant.Front"
     },
