@@ -71,7 +71,7 @@ export default function NavBar() {
               <Link href="#works" className="hover:text-red-500 transition">
                 {t.nav.works}
               </Link>
-              <Link href="#contact" className="hover:text-red-500 transition">
+              <Link href="https://wa.me/5521978813492?text=Olá! Estou enviando esta mensagem para me contactar com você" target='_blank' className="hover:text-red-500 transition">
                 {t.nav.contact}
               </Link>
               <button
