@@ -33,7 +33,7 @@ export const translations = {
     },
     contact: {
       title: "Want to add or remove a review? Send me an email",
-      email: "Email: lucasbg.lobo@gmail.com",
+      email: "E-mail: lucasbg.lobo@gmail.com",
     },
     animatedText: ["Software Engineer", "Full Stack Developer"],
     projects: projectsEn,
