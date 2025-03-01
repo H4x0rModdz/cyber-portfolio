@@ -1,11 +1,16 @@
 "use client";
-import { useEffect, useState } from "react";
-import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
-import AnimatedTitle from "./AnimatedTitle";
+
+import { useLanguage } from '@/contexts/LanguageContext';
+import { translations } from '@/lib/translations';
+import Link from 'next/link';
+import { motion, AnimatePresence } from 'framer-motion';
+import AnimatedTitle from './AnimatedTitle';
 import { FaBars } from 'react-icons/fa';
+import { useEffect, useState } from 'react';
 
 export default function NavBar() {
+  const { isEnglish } = useLanguage();
+  const t = translations[isEnglish ? 'en' : 'pt'];
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollPos, setLastScrollPos] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,21 +18,29 @@ export default function NavBar() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
-      if (currentScrollPos > lastScrollPos) {
-        setIsVisible(false);
-      } else {
-        setIsVisible(true);
-      }
+      setIsVisible(currentScrollPos <= lastScrollPos);
       setLastScrollPos(currentScrollPos);
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, [lastScrollPos]);
 
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = 'resume/resume.pdf';
-    link.download = 'resume.pdf';
+    switch (isEnglish) {
+      case true:
+        link.href = 'resume/resume-en-US.pdf';
+        link.download = 'LucasLoboCurriculum.pdf';
+        break;
+      case false:
+        link.href = 'resume/resume-pt-BR.pdf';
+        link.download = 'CurriculoLucasLobo.pdf';
+        break;
+      default:
+        link.href = 'resume/resume-en-US.pdf';
+        link.download = 'LucasLoboCurriculum.pdf';
+        break;
+    }
     link.click();
   };
 
@@ -42,27 +55,30 @@ export default function NavBar() {
           className="relative w-full top-0 left-0 z-50 bg-black"
         >
           <div className="mx-auto flex items-center justify-between py-4 px-8">
-            <div className="text-white font-bold text-xl">
-              <Link href="https://github.com/H4x0rModdz"><AnimatedTitle /></Link>
+            <div className="text-white font-bold text-xl cursor-pointer">
+                <AnimatedTitle />
             </div>
             <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden">
               <FaBars className="text-white" />
             </button>
             <div className="hidden md:flex space-x-6 text-white">
               <Link href="#about" className="hover:text-red-500 transition">
-                About Me
+                {t.nav.about}
+              </Link>
+              <Link href="#workExperience" className="hover:text-red-500 transition">
+              {t.nav.workExperience}
               </Link>
               <Link href="#works" className="hover:text-red-500 transition">
-                Works
+                {t.nav.works}
               </Link>
               <Link href="#contact" className="hover:text-red-500 transition">
-                Contact
+                {t.nav.contact}
               </Link>
               <button
                 className="hover:text-red-500 transition"
                 onClick={handleDownloadResume}
-               >
-                Download CV
+              >
+                {t.nav.downloadCV}
               </button>
             </div>
             <AnimatePresence>
@@ -75,19 +91,19 @@ export default function NavBar() {
                   className="absolute top-full right-8 md:right-auto w-auto flex flex-col items-end space-y-4 text-white md:hidden"
                 >
                   <Link href="#about" className="hover:text-red-500 transition">
-                    About Me
+                    {t.nav.about}
                   </Link>
                   <Link href="#works" className="hover:text-red-500 transition">
-                    Works
+                    {t.nav.works}
                   </Link>
                   <Link href="#contact" className="hover:text-red-500 transition">
-                    Contact
+                    {t.nav.contact}
                   </Link>
                   <button
                     className="hover:text-red-500 transition"
                     onClick={handleDownloadResume}
                   >
-                    Download CV
+                    {t.nav.downloadCV}
                   </button>
                 </motion.div>
               )}
