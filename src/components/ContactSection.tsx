@@ -14,7 +14,7 @@ export default function ContactSection() {
         {t.contact.title}
       </h2>
       <p className="text-gray-400">
-        {t.contact.email} <Link href="mailto:lucasbg.lobo@gmail.com">lucasbg.lobo@gmail.com</Link>
+        <Link href="mailto:lucasbg.lobo@gmail.com">{t.contact.email}</Link>
       </p>
     </section>
   );
