@@ -1,0 +1,71 @@
+[
+    {
+      "id": 1,
+      "name": "Pedro Figueiredo",
+      "text": "I worked with Lucas Lobo and his deliveries are quick and quality!",
+      "img": "/images/pedro.jpg",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "name": "Franklyn Viana",
+      "text": "I had a great experience working with Lucas Lobo. He is a dedicated and committed professional.",
+      "img": "/images/franklyn.jpg",
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "name": "Seringueiro Client",
+      "text": "User didn't leave a comment, but their rating speaks for itself!",
+      "img": "/images/seringueiro.png",
+      "rating": 5
+    },
+    {
+      "id": 4,
+      "name": "Personalisec Client",
+      "text": "User didn't leave a comment, but their rating speaks for itself!",
+      "img": "/images/personalisec.png",
+      "rating": 5
+    },
+    {
+      "id": 5,
+      "name": "RazPay Client",
+      "text": "User didn't leave a comment, but their rating speaks for itself!",
+      "img": "/images/razpay.png",
+      "rating": 5
+    },
+    {
+      "id": 6,
+      "name": "PayCoin Client",
+      "text": "User didn't leave a comment, but their rating speaks for itself!",
+      "img": "/images/paycoin.png",
+      "rating": 5
+    },
+    {
+      "id": 7,
+      "name": "OwProduct Client",
+      "text": "User didn't leave a comment, but their rating speaks for itself!",
+      "img": "/images/owproduct.png",
+      "rating": 5
+    },
+    {
+      "id": 8,
+      "name": "BetGo Client",
+      "text": "User didn't leave a comment, but their rating speaks for itself!",
+      "img": "/images/betgo.png",
+      "rating": 5
+    },
+    {
+      "id": 9,
+      "name": "BloxTrade Client",
+      "text": "User didn't leave a comment, but their rating speaks for itself!",
+      "rating": 5
+    },
+    {
+      "id": 10,
+      "name": "LizeLoca Client",
+      "text": "User didn't leave a comment, but their rating speaks for itself!",
+      "img": "/images/lizeloca.png",
+      "rating": 5
+    }
+  ]

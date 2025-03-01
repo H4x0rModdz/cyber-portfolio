@@ -1,0 +1,71 @@
+[
+    {
+      "id": 1,
+      "name": "Pedro Figueiredo",
+      "text": "Trabalhei com Lucas Lobo e suas entregas possuem agilidade e qualidade!",
+      "img": "/images/pedro.jpg",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "name": "Franklyn Viana",
+      "text": "Adorei trabalhar com o Lucas Lobo, ele é um profissional dedicado e comprometido.",
+      "img": "/images/franklyn.jpg",
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "name": "Cliente Seringueiro",
+      "text": "O usuário não deixou um comentário, mas sua avaliação fala por si só!",
+      "img": "/images/seringueiro.png",
+      "rating": 5
+    },
+    {
+      "id": 4,
+      "name": "Cliente Personalisec",
+      "text": "O usuário não deixou um comentário, mas sua avaliação fala por si só!",
+      "img": "/images/personalisec.png",
+      "rating": 5
+    },
+    {
+      "id": 5,
+      "name": "Cliente RazPay",
+      "text": "O usuário não deixou um comentário, mas sua avaliação fala por si só!",
+      "img": "/images/razpay.png",
+      "rating": 5
+    },
+    {
+      "id": 6,
+      "name": "Cliente PayCoin",
+      "text": "O usuário não deixou um comentário, mas sua avaliação fala por si só!",
+      "img": "/images/paycoin.png",
+      "rating": 5
+    },
+    {
+      "id": 7,
+      "name": "Cliente OwProduct",
+      "text": "O usuário não deixou um comentário, mas sua avaliação fala por si só!",
+      "img": "/images/owproduct.png",
+      "rating": 5
+    },
+    {
+      "id": 8,
+      "name": "Cliente BetGo",
+      "text": "O usuário não deixou um comentário, mas sua avaliação fala por si só!",
+      "img": "/images/betgo.png",
+      "rating": 5
+    },
+    {
+      "id": 9,
+      "name": "Cliente BloxTrade",
+      "text": "O usuário não deixou um comentário, mas sua avaliação fala por si só!",
+      "rating": 5
+    },
+    {
+      "id": 10,
+      "name": "Cliente LizeLoca",
+      "text": "O usuário não deixou um comentário, mas sua avaliação fala por si só!",
+      "img": "/images/lizeloca.png",
+      "rating": 5
+    }
+  ]

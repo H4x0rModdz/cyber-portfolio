@@ -1,0 +1,223 @@
+[
+    {
+      "name": "Red-Shark API",
+      "videoPath": "",
+      "description": "Red-Shark é a plataforma de mídia social mais segura e inovadora do Brasil, projetada para ajudar desenvolvedores em ascensão a trabalhar em um projeto de grande escala, ganhar experiência no mundo real e avançar em suas carreiras — sem emprego necessário!",
+      "image": "images/red-shark-back.png",
+      "stacks": [".NET (C#)", "Aspire", "Azure DevOps", "Redis", "RabbitMQ", "SQL Server", "SignalR", "SeriLog", "EF Core", "Open Telemetry"],
+      "createdAt": "17/03/2022",
+      "repositoryPath": "https://github.com/H4x0rModdz/RedShark.Api"
+    },
+    {
+      "name": "Red-Shark Front-End",
+      "videoPath": "videos/red-shark-front.mp4",
+      "description": "O front-end do Red-Shark, oferecendo uma experiência de usuário fluida para a plataforma de mídia social de código aberto mais segura do Brasil, construída com tecnologias web modernas.",
+      "image": "images/red-shark-front.png",
+      "stacks": ["NextJs", "TypeScript", "TailWind CSS", "SignalR", "React Icons", "Lucid React", "ShadCN", "Axios", "Toastify", "Zod", "Selenium"],
+      "createdAt": "17/03/2022",
+      "repositoryPath": "https://github.com/H4x0rModdz/RedShark.Front"
+    },
+    {
+      "name": "Restaurant API",
+      "videoPath": "",
+      "description": "Uma API robusta para gerenciar operações de restaurantes, integrando múltiplos bancos de dados e funcionalidades de comunicação em tempo real.",
+      "image": "images/restaurant-back.png",
+      "stacks": [".NET (C#)", "SignalR", "EF Core", "SQL Server", "PostgreSQL", "MongoDB", "Redis", "RabbitMQ", "Docker", "Aspire"],
+      "createdAt": "15/01/2023",
+      "repositoryPath": "https://github.com/H4x0rModdz/Restaurant.Api"
+    },
+    {
+      "name": "Restaurant Front-End",
+      "videoPath": "",
+      "description": "A interface front-end para a plataforma Restaurant, fornecendo uma UI intuitiva para gerenciar operações de restaurantes.",
+      "image": "",
+      "stacks": [".NET (C#)", "Blazor", "Razor Pages", "SignalR"],
+      "createdAt": "15/01/2023",
+      "repositoryPath": "https://github.com/H4x0rModdz/Restaurant.Front"
+    },
+    {
+      "name": "OwProduct",
+      "videoPath": "",
+      "description": "Plataforma de assinatura para gerenciamento de estoque, usando arquitetura hexagonal no back-end. Inclui middleware para importação de arquivos XLSX e CSV, integração com Mercado Pago para pagamentos e Recharts para visualização de dados.",
+      "image": "",
+      "stacks": ["NextJs", "TypeScript", "Tailwind CSS", ".NET (C#)", "PostgreSQL", "Recharts", "NextAuth", "React Icons", "Azure DevOps"],
+      "createdAt": "26/02/2025",
+      "repositoryPath": ""
+    },
+    {
+      "name": "LizeLoca",
+      "videoPath": "",
+      "description": "Plataforma de conversão de moedas com ambientes Admin e Cliente. O Admin gerencia idiomas e APIs de carteiras digitais, enquanto o Cliente oferece uma interface segura e intuitiva para conversões.",
+      "image": "/images/lizeloca.png",
+      "stacks": ["NextJs", "TypeScript", "TailWind CSS", ".NET (C#)", "Docker", "Azure DevOps", "NextAuth", "SignalR", "Mercado Pago API"],
+      "createdAt": "17/03/2022",
+      "repositoryPath": ""
+    },
+    {
+      "name": "BloxTrade",
+      "videoPath": "",
+      "description": "Uma plataforma de conversão de moedas com dois ambientes: Admin para gerenciar integrações e Cliente para conversões seguras, construída com tecnologias modernas para escalabilidade.",
+      "image": "",
+      "stacks": ["NextJs", "TypeScript", "Tailwind CSS", ".NET (C#)", "PostgreSQL", "Docker", "Azure DevOps", "NextAuth", "Recharts"],
+      "createdAt": "15/01/2023",
+      "repositoryPath": ""
+    },
+    {
+      "name": "Seringueiros",
+      "videoPath": "",
+      "description": "Um sistema de gerenciamento de propriedades e plantações de seringueiras, rastreando seringueiros, horários de trabalho e atividades da plantação com uma interface completa de gerenciamento.",
+      "image": "/images/seringueiro.png",
+      "stacks": ["Dart", "Flutter", ".NET (C#)", "Docker", "PostgreSQL", "Azure DevOps"],
+      "createdAt": "26/02/2025",
+      "repositoryPath": ""
+    },
+    {
+      "name": "Personalisec",
+      "videoPath": "",
+      "description": "Uma plataforma personalizável para uso pessoal e empresarial, integrando frameworks modernos e autenticação segura.",
+      "image": "images/personalisec.png",
+      "stacks": ["NextJs", "TypeScript", "Tailwind CSS", ".NET (C#)", "PostgreSQL", "Docker", "Azure DevOps", "NextAuth", "Recharts"],
+      "createdAt": "15/01/2023",
+      "repositoryPath": ""
+    },
+    {
+      "name": "BetGo.AI",
+      "videoPath": "videos/betgo.mp4",
+      "description": "Uma plataforma de apostas alimentada por IA com visualização de dados em tempo real e autenticação segura do usuário.",
+      "image": "images/betgo.png",
+      "stacks": ["NextJs", "TypeScript", "Tailwind CSS", ".NET (C#)", "PostgreSQL", "Docker", "Azure DevOps", "NextAuth", "Recharts"],
+      "createdAt": "15/01/2023",
+      "repositoryPath": ""
+    },
+    {
+      "name": "PayCoin",
+      "videoPath": "",
+      "description": "Uma plataforma de processamento de pagamentos com suporte para múltiplas moedas e transações seguras.",
+      "image": "images/paycoin.png",
+      "stacks": ["NextJs", "TypeScript", "Tailwind CSS", ".NET (C#)", "PostgreSQL", "Docker", "Azure DevOps", "NextAuth", "Recharts"],
+      "createdAt": "15/01/2023",
+      "repositoryPath": "https://www.paycoinbr.com/"
+    },
+    {
+      "name": "RazPay",
+      "videoPath": "",
+      "description": "Um gateway de pagamento rápido e seguro para empresas, integrando autenticação moderna e pipelines de implantação.",
+      "image": "images/razpay.png",
+      "stacks": ["NextJs", "TypeScript", "Tailwind CSS", ".NET (C#)", "PostgreSQL", "Docker", "Azure DevOps", "NextAuth", "Recharts"],
+      "createdAt": "15/01/2023",
+      "repositoryPath": ""
+    },
+    {
+      "name": "Clean Sharp Architecture (My Own Template)",
+      "videoPath": "",
+      "description": "Um modelo personalizado em C# implementando princípios de Arquitetura Limpa para aplicações escaláveis e manuteníveis.",
+      "image": "images/clean.png",
+      "stacks": ["C#", ".NET"],
+      "createdAt": "15/01/2023",
+      "repositoryPath": "https://github.com/H4x0rModdz/CleanSharpArchitecture"
+    },
+    {
+      "name": "Red-Shark Mobile",
+      "videoPath": "",
+      "description": "A versão mobile do Red-Shark, oferecendo uma experiência de mídia social segura em dispositivos Android.",
+      "image": "",
+      "stacks": ["Kotlin"],
+      "createdAt": "15/01/2023",
+      "repositoryPath": "https://github.com/H4x0rModdz/RedShark.Mobile"
+    },
+    {
+      "name": "RansomSharp",
+      "videoPath": "",
+      "description": "Um ransomware educacional desenvolvido em C# para demonstrar mecanismos de cibersegurança (apenas para fins de aprendizado).",
+      "image": "https://raw.githubusercontent.com/H4x0rModdz/RansomSharp/main/demo.gif",
+      "stacks": ["C#", "Console App"],
+      "createdAt": "15/01/2023",
+      "repositoryPath": "https://github.com/H4x0rModdz/RansomSharp",
+      "tag": "Educação"
+    },
+    {
+      "name": "AES Encryptor",
+      "videoPath": "",
+      "description": "Um aplicativo de console simples de criptografia AES em C# para criptografar e descriptografar dados sensíveis.",
+      "image": "https://raw.githubusercontent.com/H4x0rModdz/AES-Encryptor/main/example.png",
+      "stacks": ["C#", "Console App"],
+      "createdAt": "15/01/2023",
+      "repositoryPath": "https://github.com/H4x0rModdz/AES-Encryptor"
+    },
+    {
+      "name": "LegacyRPG",
+      "videoPath": "",
+      "description": "Um RPG baseado em texto ambientado em um mundo de fantasia medieval, permitindo que os jogadores criem personagens e embarquem em missões.",
+      "image": "",
+      "stacks": ["C#", "Console App", "SQLite"],
+      "createdAt": "15/01/2023",
+      "repositoryPath": "https://github.com/H4x0rModdz/LegacyRPG"
+    },
+    {
+      "name": "LegacyRPG GoLang Version",
+      "videoPath": "",
+      "description": "Uma versão em GoLang do LegacyRPG, um RPG baseado em texto com aventuras de fantasia medieval.",
+      "image": "",
+      "stacks": ["Go Language", "Terminal"],
+      "createdAt": "15/01/2023",
+      "repositoryPath": "https://github.com/H4x0rModdz/LegacyRPG-GoLang"
+    },
+    {
+      "name": "Nightmare",
+      "videoPath": "",
+      "description": "Um malware de código aberto criado para fins educacionais, semelhante à ferramenta NoEscape (apenas para aprendizado).",
+      "image": "images/nightmare.jpg",
+      "stacks": ["C#", "Console App"],
+      "createdAt": "15/01/2023",
+      "repositoryPath": "https://github.com/H4x0rModdz/Nightmare",
+      "tag": "Educação"
+    },
+    {
+      "name": "PythonWare",
+      "videoPath": "",
+      "description": "Um ransomware simples em Python para fins educacionais, demonstrando técnicas de criptografia (não para uso malicioso).",
+      "image": "https://raw.githubusercontent.com/H4x0rModdz/PythonWare/main/pythonware.jpg",
+      "stacks": ["Python"],
+      "createdAt": "15/01/2023",
+      "repositoryPath": "https://github.com/H4x0rModdz/PythonWare",
+      "tag": "Educação"
+    },
+    {
+      "name": "CSGO Aimbot",
+      "videoPath": "videos/aimbot.mp4",
+      "description": "Um aimbot externo para CSGO desenvolvido para fins educacionais para explorar técnicas de hacking em jogos.",
+      "image": "images/aimbot.jpg",
+      "stacks": ["C#"],
+      "createdAt": "15/01/2023",
+      "repositoryPath": "https://github.com/H4x0rModdz/CSGOAimbot",
+      "tag": "Educação"
+    },
+    {
+      "name": "External CSGO Cheat",
+      "videoPath": "",
+      "description": "Um cheat externo simples para CSGO, criado para fins educacionais para estudar segurança em jogos.",
+      "image": "images/aimbot.jpg",
+      "stacks": ["C#"],
+      "createdAt": "15/01/2023",
+      "repositoryPath": "https://github.com/H4x0rModdz/ExternalCSGOCheat",
+      "tag": "Educação"
+    },
+    {
+      "name": "AutoClick C#",
+      "videoPath": "",
+      "description": "Um autoclicker simples desenvolvido em C# para automatizar tarefas de cliques repetitivos.",
+      "image": "https://media.licdn.com/dms/image/v2/C4D12AQEQQT7k6p2pRQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1645291923189?e=1746057600&v=beta&t=ppoTMSpF605RHwZIfBhhevpytVNYkFCu2BVi6R-XcH8",
+      "stacks": ["C#"],
+      "createdAt": "15/01/2023",
+      "repositoryPath": "https://github.com/H4x0rModdz/AutoClick_CSharp"
+    },
+    {
+      "name": "Net Speed Test",
+      "videoPath": "",
+      "description": "Um programa em Node.js para medir a velocidade da internet baixando um arquivo e calculando velocidades médias.",
+      "image": "https://i.pcmag.com/imagery/articles/03xdeDG4m4n0gJG3CbFNIgm-17..v1661444591.png",
+      "stacks": ["NodeJs", "JavaScript"],
+      "createdAt": "15/01/2023",
+      "repositoryPath": "https://github.com/H4x0rModdz/NetSpeedTest"
+    }
+  ]
