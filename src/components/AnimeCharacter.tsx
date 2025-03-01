@@ -60,7 +60,7 @@ const AnimeCharacter = () => {
           <p className="text-gray-800 text-sm select-none">
             {currentMessage}
           </p>
-          <div className="absolute -bottom-4 left-0 w-4 h-4 bg-white transform rotate-45"></div>
+          <div className="absolute -bottom-4 w-4 h-4 bg-white transform rotate-45"></div>
         </div>
       </div>
     </div>
