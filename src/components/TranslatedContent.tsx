@@ -10,13 +10,14 @@ import ExperienceSection from '@/components/ExperienceSection';
 import WorksSection from '@/components/WorksSection';
 import ReviewsSection from '@/components/ReviewsSection';
 import ContactSection from '@/components/ContactSection';
+import BackgroundParticle from './BackgroundParticle';
 
 export default function TranslatedContent() {
   const { isEnglish } = useLanguage();
   const actualLanguage = translations[isEnglish ? 'en' : 'pt'];
 
   return (
-    <div className="bg-black text-white min-h-screen select-none">
+    <div className=" text-white min-h-screen select-none">
       <Head>
         <title>{actualLanguage.title}</title>
         <meta name="description" content={actualLanguage.description} />
@@ -24,6 +25,7 @@ export default function TranslatedContent() {
       <NavBar />
       <LanguageSwitch />
       <main>
+      <BackgroundParticle />
         <HeroSection />
         <ExperienceSection />
         <WorksSection />

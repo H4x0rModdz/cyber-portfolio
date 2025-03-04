@@ -52,7 +52,7 @@ export default function NavBar() {
           animate={{ y: 0 }}
           exit={{ y: -80 }}
           transition={{ duration: 0.3 }}
-          className="relative w-full top-0 left-0 z-50 bg-black"
+          className="relative w-full top-0 left-0 z-50 bg-transparent backdrop-blur-sm"
         >
           <div className="mx-auto flex items-center justify-between py-4 px-8">
             <div className="text-white font-bold text-xl cursor-pointer">

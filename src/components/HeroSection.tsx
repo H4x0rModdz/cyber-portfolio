@@ -11,7 +11,7 @@ export default function HeroSection() {
   const actualLanguage = translations[isEnglish ? 'en' : 'pt'];
 
   return (
-    <section className="h-screen bg-black flex flex-col items-center justify-center text-white px-4">
+    <section className="h-screen flex flex-col items-center justify-center text-white px-4">
       <motion.h1
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
